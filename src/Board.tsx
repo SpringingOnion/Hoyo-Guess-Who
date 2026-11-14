@@ -67,7 +67,7 @@ export default function Board({ state, setState, onHome, onNewGame }: Props) {
 
       {sheet === 'secret' && (
         <SecretSheet c={secret} state={state} onClose={() => setSheet(null)}
-          onReroll={() => { replay(true); setSheet(null); }} />
+          onReroll={() => replay(true)} />
       )}
       {sheet === 'guess' && (
         <GuessSheet chars={up} onClose={() => setSheet(null)}
