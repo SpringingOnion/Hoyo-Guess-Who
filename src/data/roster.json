@@ -1,0 +1,3167 @@
+{
+ "gi": [
+  {
+   "id": "gi-10000005",
+   "name": "Aether",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "weapon": "Sword"
+   },
+   "img": "portraits/gi/gi-10000005.webp"
+  },
+  {
+   "id": "gi-10000121",
+   "name": "Aino",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Hydro",
+    "weapon": "Claymore",
+    "region": "Nod-Krai"
+   },
+   "img": "portraits/gi/gi-10000121.webp"
+  },
+  {
+   "id": "gi-10000038",
+   "name": "Albedo",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Geo",
+    "weapon": "Sword",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000038.webp"
+  },
+  {
+   "id": "gi-10000078",
+   "name": "Alhaitham",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Dendro",
+    "weapon": "Sword",
+    "region": "Sumeru"
+   },
+   "img": "portraits/gi/gi-10000078.webp"
+  },
+  {
+   "id": "gi-10000062",
+   "name": "Aloy",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Cryo",
+    "weapon": "Bow",
+    "region": "Other"
+   },
+   "img": "portraits/gi/gi-10000062.webp"
+  },
+  {
+   "id": "gi-10000148",
+   "name": "Alyosha",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Electro",
+    "weapon": "Polearm",
+    "region": "Snezhnaya"
+   },
+   "img": "portraits/gi/gi-10000148.webp"
+  },
+  {
+   "id": "gi-10000021",
+   "name": "Amber",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Pyro",
+    "weapon": "Bow",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000021.webp"
+  },
+  {
+   "id": "gi-10000057",
+   "name": "Arataki Itto",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Geo",
+    "weapon": "Claymore",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000057.webp"
+  },
+  {
+   "id": "gi-10000096",
+   "name": "Arlecchino",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Pyro",
+    "weapon": "Polearm",
+    "region": "Snezhnaya"
+   },
+   "img": "portraits/gi/gi-10000096.webp"
+  },
+  {
+   "id": "gi-10000082",
+   "name": "Baizhu",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Dendro",
+    "weapon": "Catalyst",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000082.webp"
+  },
+  {
+   "id": "gi-10000014",
+   "name": "Barbara",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Hydro",
+    "weapon": "Catalyst",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000014.webp"
+  },
+  {
+   "id": "gi-10000024",
+   "name": "Beidou",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electro",
+    "weapon": "Claymore",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000024.webp"
+  },
+  {
+   "id": "gi-10000032",
+   "name": "Bennett",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Pyro",
+    "weapon": "Sword",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000032.webp"
+  },
+  {
+   "id": "gi-10000072",
+   "name": "Candace",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Hydro",
+    "weapon": "Polearm",
+    "region": "Sumeru"
+   },
+   "img": "portraits/gi/gi-10000072.webp"
+  },
+  {
+   "id": "gi-10000088",
+   "name": "Charlotte",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Cryo",
+    "weapon": "Catalyst",
+    "region": "Fontaine"
+   },
+   "img": "portraits/gi/gi-10000088.webp"
+  },
+  {
+   "id": "gi-10000104",
+   "name": "Chasca",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Anemo",
+    "weapon": "Bow",
+    "region": "Natlan"
+   },
+   "img": "portraits/gi/gi-10000104.webp"
+  },
+  {
+   "id": "gi-10000090",
+   "name": "Chevreuse",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Pyro",
+    "weapon": "Polearm",
+    "region": "Fontaine"
+   },
+   "img": "portraits/gi/gi-10000090.webp"
+  },
+  {
+   "id": "gi-10000094",
+   "name": "Chiori",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Geo",
+    "weapon": "Sword",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000094.webp"
+  },
+  {
+   "id": "gi-10000036",
+   "name": "Chongyun",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Cryo",
+    "weapon": "Claymore",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000036.webp"
+  },
+  {
+   "id": "gi-10000107",
+   "name": "Citlali",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Cryo",
+    "weapon": "Catalyst",
+    "region": "Natlan"
+   },
+   "img": "portraits/gi/gi-10000107.webp"
+  },
+  {
+   "id": "gi-10000098",
+   "name": "Clorinde",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electro",
+    "weapon": "Sword",
+    "region": "Fontaine"
+   },
+   "img": "portraits/gi/gi-10000098.webp"
+  },
+  {
+   "id": "gi-10000067",
+   "name": "Collei",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Dendro",
+    "weapon": "Bow",
+    "region": "Sumeru"
+   },
+   "img": "portraits/gi/gi-10000067.webp"
+  },
+  {
+   "id": "gi-10000125",
+   "name": "Columbina",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Hydro",
+    "weapon": "Catalyst",
+    "region": "Nod-Krai"
+   },
+   "img": "portraits/gi/gi-10000125.webp"
+  },
+  {
+   "id": "gi-10000071",
+   "name": "Cyno",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Electro",
+    "weapon": "Polearm",
+    "region": "Sumeru"
+   },
+   "img": "portraits/gi/gi-10000071.webp"
+  },
+  {
+   "id": "gi-10000115",
+   "name": "Dahlia",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Hydro",
+    "weapon": "Sword",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000115.webp"
+  },
+  {
+   "id": "gi-10000079",
+   "name": "Dehya",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Pyro",
+    "weapon": "Claymore",
+    "region": "Sumeru"
+   },
+   "img": "portraits/gi/gi-10000079.webp"
+  },
+  {
+   "id": "gi-10000016",
+   "name": "Diluc",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Pyro",
+    "weapon": "Claymore",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000016.webp"
+  },
+  {
+   "id": "gi-10000039",
+   "name": "Diona",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Cryo",
+    "weapon": "Bow",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000039.webp"
+  },
+  {
+   "id": "gi-10000068",
+   "name": "Dori",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electro",
+    "weapon": "Claymore",
+    "region": "Sumeru"
+   },
+   "img": "portraits/gi/gi-10000068.webp"
+  },
+  {
+   "id": "gi-10000123",
+   "name": "Durin",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Pyro",
+    "weapon": "Sword",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000123.webp"
+  },
+  {
+   "id": "gi-10000099",
+   "name": "Emilie",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Dendro",
+    "weapon": "Polearm",
+    "region": "Fontaine"
+   },
+   "img": "portraits/gi/gi-10000099.webp"
+  },
+  {
+   "id": "gi-10000112",
+   "name": "Escoffier",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Cryo",
+    "weapon": "Polearm",
+    "region": "Fontaine"
+   },
+   "img": "portraits/gi/gi-10000112.webp"
+  },
+  {
+   "id": "gi-10000051",
+   "name": "Eula",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Cryo",
+    "weapon": "Claymore",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000051.webp"
+  },
+  {
+   "id": "gi-10000076",
+   "name": "Faruzan",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Anemo",
+    "weapon": "Bow",
+    "region": "Sumeru"
+   },
+   "img": "portraits/gi/gi-10000076.webp"
+  },
+  {
+   "id": "gi-10000031",
+   "name": "Fischl",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electro",
+    "weapon": "Bow",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000031.webp"
+  },
+  {
+   "id": "gi-10000120",
+   "name": "Flins",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Electro",
+    "weapon": "Polearm",
+    "region": "Nod-Krai"
+   },
+   "img": "portraits/gi/gi-10000120.webp"
+  },
+  {
+   "id": "gi-10000085",
+   "name": "Freminet",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Cryo",
+    "weapon": "Claymore",
+    "region": "Fontaine"
+   },
+   "img": "portraits/gi/gi-10000085.webp"
+  },
+  {
+   "id": "gi-10000089",
+   "name": "Furina",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Hydro",
+    "weapon": "Sword",
+    "region": "Fontaine"
+   },
+   "img": "portraits/gi/gi-10000089.webp"
+  },
+  {
+   "id": "gi-10000092",
+   "name": "Gaming",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Pyro",
+    "weapon": "Claymore",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000092.webp"
+  },
+  {
+   "id": "gi-10000037",
+   "name": "Ganyu",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Cryo",
+    "weapon": "Bow",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000037.webp"
+  },
+  {
+   "id": "gi-10000055",
+   "name": "Gorou",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Geo",
+    "weapon": "Bow",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000055.webp"
+  },
+  {
+   "id": "gi-10000046",
+   "name": "Hu Tao",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Pyro",
+    "weapon": "Polearm",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000046.webp"
+  },
+  {
+   "id": "gi-10000110",
+   "name": "Iansan",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electro",
+    "weapon": "Polearm",
+    "region": "Natlan"
+   },
+   "img": "portraits/gi/gi-10000110.webp"
+  },
+  {
+   "id": "gi-10000113",
+   "name": "Ifa",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Anemo",
+    "weapon": "Catalyst",
+    "region": "Natlan"
+   },
+   "img": "portraits/gi/gi-10000113.webp"
+  },
+  {
+   "id": "gi-10000127",
+   "name": "Illuga",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Geo",
+    "weapon": "Polearm",
+    "region": "Nod-Krai"
+   },
+   "img": "portraits/gi/gi-10000127.webp"
+  },
+  {
+   "id": "gi-10000116",
+   "name": "Ineffa",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electro",
+    "weapon": "Polearm",
+    "region": "Nod-Krai"
+   },
+   "img": "portraits/gi/gi-10000116.webp"
+  },
+  {
+   "id": "gi-10000124",
+   "name": "Jahoda",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Anemo",
+    "weapon": "Bow",
+    "region": "Nod-Krai"
+   },
+   "img": "portraits/gi/gi-10000124.webp"
+  },
+  {
+   "id": "gi-10000003",
+   "name": "Jean",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Anemo",
+    "weapon": "Sword",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000003.webp"
+  },
+  {
+   "id": "gi-10000100",
+   "name": "Kachina",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Geo",
+    "weapon": "Polearm",
+    "region": "Natlan"
+   },
+   "img": "portraits/gi/gi-10000100.webp"
+  },
+  {
+   "id": "gi-10000047",
+   "name": "Kaedehara Kazuha",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Anemo",
+    "weapon": "Sword",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000047.webp"
+  },
+  {
+   "id": "gi-10000015",
+   "name": "Kaeya",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Cryo",
+    "weapon": "Sword",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000015.webp"
+  },
+  {
+   "id": "gi-10000002",
+   "name": "Kamisato Ayaka",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Cryo",
+    "weapon": "Sword",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000002.webp"
+  },
+  {
+   "id": "gi-10000066",
+   "name": "Kamisato Ayato",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Hydro",
+    "weapon": "Sword",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000066.webp"
+  },
+  {
+   "id": "gi-10000081",
+   "name": "Kaveh",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Dendro",
+    "weapon": "Claymore",
+    "region": "Sumeru"
+   },
+   "img": "portraits/gi/gi-10000081.webp"
+  },
+  {
+   "id": "gi-10000042",
+   "name": "Keqing",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electro",
+    "weapon": "Sword",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000042.webp"
+  },
+  {
+   "id": "gi-10000101",
+   "name": "Kinich",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Dendro",
+    "weapon": "Claymore",
+    "region": "Natlan"
+   },
+   "img": "portraits/gi/gi-10000101.webp"
+  },
+  {
+   "id": "gi-10000061",
+   "name": "Kirara",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Dendro",
+    "weapon": "Sword",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000061.webp"
+  },
+  {
+   "id": "gi-10000029",
+   "name": "Klee",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Pyro",
+    "weapon": "Catalyst",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000029.webp"
+  },
+  {
+   "id": "gi-10000056",
+   "name": "Kujou Sara",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electro",
+    "weapon": "Bow",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000056.webp"
+  },
+  {
+   "id": "gi-10000065",
+   "name": "Kuki Shinobu",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electro",
+    "weapon": "Sword",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000065.webp"
+  },
+  {
+   "id": "gi-10000108",
+   "name": "Lan Yan",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Anemo",
+    "weapon": "Catalyst",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000108.webp"
+  },
+  {
+   "id": "gi-10000119",
+   "name": "Lauma",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Dendro",
+    "weapon": "Catalyst",
+    "region": "Nod-Krai"
+   },
+   "img": "portraits/gi/gi-10000119.webp"
+  },
+  {
+   "id": "gi-10000074",
+   "name": "Layla",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Cryo",
+    "weapon": "Sword",
+    "region": "Sumeru"
+   },
+   "img": "portraits/gi/gi-10000074.webp"
+  },
+  {
+   "id": "gi-10000130",
+   "name": "Linnea",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Geo",
+    "weapon": "Bow",
+    "region": "Nod-Krai"
+   },
+   "img": "portraits/gi/gi-10000130.webp"
+  },
+  {
+   "id": "gi-10000006",
+   "name": "Lisa",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electro",
+    "weapon": "Catalyst",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000006.webp"
+  },
+  {
+   "id": "gi-10000129",
+   "name": "Lohen",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Cryo",
+    "weapon": "Polearm",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000129.webp"
+  },
+  {
+   "id": "gi-10000007",
+   "name": "Lumine",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "weapon": "Sword"
+   },
+   "img": "portraits/gi/gi-10000007.webp"
+  },
+  {
+   "id": "gi-10000083",
+   "name": "Lynette",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Anemo",
+    "weapon": "Sword",
+    "region": "Fontaine"
+   },
+   "img": "portraits/gi/gi-10000083.webp"
+  },
+  {
+   "id": "gi-10000084",
+   "name": "Lyney",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Pyro",
+    "weapon": "Bow",
+    "region": "Fontaine"
+   },
+   "img": "portraits/gi/gi-10000084.webp"
+  },
+  {
+   "id": "gi-10000106",
+   "name": "Mavuika",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Pyro",
+    "weapon": "Claymore",
+    "region": "Natlan"
+   },
+   "img": "portraits/gi/gi-10000106.webp"
+  },
+  {
+   "id": "gi-10000080",
+   "name": "Mika",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Cryo",
+    "weapon": "Polearm",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000080.webp"
+  },
+  {
+   "id": "gi-10000136",
+   "name": "Mitya",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Electro",
+    "weapon": "Catalyst",
+    "region": "Snezhnaya"
+   },
+   "img": "portraits/gi/gi-10000136.webp"
+  },
+  {
+   "id": "gi-10000041",
+   "name": "Mona",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Hydro",
+    "weapon": "Catalyst",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000041.webp"
+  },
+  {
+   "id": "gi-10000102",
+   "name": "Mualani",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Hydro",
+    "weapon": "Catalyst",
+    "region": "Natlan"
+   },
+   "img": "portraits/gi/gi-10000102.webp"
+  },
+  {
+   "id": "gi-10000073",
+   "name": "Nahida",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Dendro",
+    "weapon": "Catalyst",
+    "region": "Sumeru"
+   },
+   "img": "portraits/gi/gi-10000073.webp"
+  },
+  {
+   "id": "gi-10000091",
+   "name": "Navia",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Geo",
+    "weapon": "Claymore",
+    "region": "Fontaine"
+   },
+   "img": "portraits/gi/gi-10000091.webp"
+  },
+  {
+   "id": "gi-10000122",
+   "name": "Nefer",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Dendro",
+    "weapon": "Catalyst",
+    "region": "Nod-Krai"
+   },
+   "img": "portraits/gi/gi-10000122.webp"
+  },
+  {
+   "id": "gi-10000087",
+   "name": "Neuvillette",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Hydro",
+    "weapon": "Catalyst",
+    "region": "Fontaine"
+   },
+   "img": "portraits/gi/gi-10000087.webp"
+  },
+  {
+   "id": "gi-10000131",
+   "name": "Nicole",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Pyro",
+    "weapon": "Catalyst",
+    "region": "Other"
+   },
+   "img": "portraits/gi/gi-10000131.webp"
+  },
+  {
+   "id": "gi-10000070",
+   "name": "Nilou",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Hydro",
+    "weapon": "Sword",
+    "region": "Sumeru"
+   },
+   "img": "portraits/gi/gi-10000070.webp"
+  },
+  {
+   "id": "gi-10000027",
+   "name": "Ningguang",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Geo",
+    "weapon": "Catalyst",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000027.webp"
+  },
+  {
+   "id": "gi-10000034",
+   "name": "Noelle",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Geo",
+    "weapon": "Claymore",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000034.webp"
+  },
+  {
+   "id": "gi-10000150",
+   "name": "Odette",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Cryo",
+    "weapon": "Sword",
+    "region": "Snezhnaya"
+   },
+   "img": "portraits/gi/gi-10000150.webp"
+  },
+  {
+   "id": "gi-10000105",
+   "name": "Ororon",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Electro",
+    "weapon": "Bow",
+    "region": "Natlan"
+   },
+   "img": "portraits/gi/gi-10000105.webp"
+  },
+  {
+   "id": "gi-10000132",
+   "name": "Prune",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Anemo",
+    "weapon": "Catalyst",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000132.webp"
+  },
+  {
+   "id": "gi-10000035",
+   "name": "Qiqi",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Cryo",
+    "weapon": "Sword",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000035.webp"
+  },
+  {
+   "id": "gi-10000052",
+   "name": "Raiden Shogun",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electro",
+    "weapon": "Polearm",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000052.webp"
+  },
+  {
+   "id": "gi-10000020",
+   "name": "Razor",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Electro",
+    "weapon": "Claymore",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000020.webp"
+  },
+  {
+   "id": "gi-10000045",
+   "name": "Rosaria",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Cryo",
+    "weapon": "Polearm",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000045.webp"
+  },
+  {
+   "id": "gi-10000133",
+   "name": "Sandrone",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Cryo",
+    "weapon": "Claymore",
+    "region": "Snezhnaya"
+   },
+   "img": "portraits/gi/gi-10000133.webp"
+  },
+  {
+   "id": "gi-10000054",
+   "name": "Sangonomiya Kokomi",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Hydro",
+    "weapon": "Catalyst",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000054.webp"
+  },
+  {
+   "id": "gi-10000053",
+   "name": "Sayu",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Anemo",
+    "weapon": "Claymore",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000053.webp"
+  },
+  {
+   "id": "gi-10000097",
+   "name": "Sethos",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Electro",
+    "weapon": "Bow",
+    "region": "Sumeru"
+   },
+   "img": "portraits/gi/gi-10000097.webp"
+  },
+  {
+   "id": "gi-10000063",
+   "name": "Shenhe",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Cryo",
+    "weapon": "Polearm",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000063.webp"
+  },
+  {
+   "id": "gi-10000059",
+   "name": "Shikanoin Heizou",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Anemo",
+    "weapon": "Catalyst",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000059.webp"
+  },
+  {
+   "id": "gi-10000095",
+   "name": "Sigewinne",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Hydro",
+    "weapon": "Bow",
+    "region": "Fontaine"
+   },
+   "img": "portraits/gi/gi-10000095.webp"
+  },
+  {
+   "id": "gi-10000114",
+   "name": "Skirk",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Cryo",
+    "weapon": "Sword",
+    "region": "Other"
+   },
+   "img": "portraits/gi/gi-10000114.webp"
+  },
+  {
+   "id": "gi-10000043",
+   "name": "Sucrose",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Anemo",
+    "weapon": "Catalyst",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000043.webp"
+  },
+  {
+   "id": "gi-10000033",
+   "name": "Tartaglia",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Hydro",
+    "weapon": "Bow",
+    "region": "Snezhnaya"
+   },
+   "img": "portraits/gi/gi-10000033.webp"
+  },
+  {
+   "id": "gi-10000050",
+   "name": "Thoma",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Pyro",
+    "weapon": "Polearm",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000050.webp"
+  },
+  {
+   "id": "gi-10000069",
+   "name": "Tighnari",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Dendro",
+    "weapon": "Bow",
+    "region": "Sumeru"
+   },
+   "img": "portraits/gi/gi-10000069.webp"
+  },
+  {
+   "id": "gi-10000137",
+   "name": "Valeriy",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Electro",
+    "weapon": "Sword",
+    "region": "Snezhnaya"
+   },
+   "img": "portraits/gi/gi-10000137.webp"
+  },
+  {
+   "id": "gi-10000111",
+   "name": "Varesa",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electro",
+    "weapon": "Catalyst",
+    "region": "Natlan"
+   },
+   "img": "portraits/gi/gi-10000111.webp"
+  },
+  {
+   "id": "gi-10000128",
+   "name": "Varka",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Anemo",
+    "weapon": "Claymore",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000128.webp"
+  },
+  {
+   "id": "gi-10000022",
+   "name": "Venti",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Anemo",
+    "weapon": "Bow",
+    "region": "Mondstadt"
+   },
+   "img": "portraits/gi/gi-10000022.webp"
+  },
+  {
+   "id": "gi-10000143",
+   "name": "Vesna",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Anemo",
+    "weapon": "Sword",
+    "region": "Snezhnaya"
+   },
+   "img": "portraits/gi/gi-10000143.webp"
+  },
+  {
+   "id": "gi-10000140",
+   "name": "Vodyanitsa",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Hydro",
+    "weapon": "Catalyst",
+    "region": "Snezhnaya"
+   },
+   "img": "portraits/gi/gi-10000140.webp"
+  },
+  {
+   "id": "gi-10000075",
+   "name": "Wanderer",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Anemo",
+    "weapon": "Catalyst",
+    "region": "Sumeru"
+   },
+   "img": "portraits/gi/gi-10000075.webp"
+  },
+  {
+   "id": "gi-10000086",
+   "name": "Wriothesley",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Cryo",
+    "weapon": "Catalyst",
+    "region": "Fontaine"
+   },
+   "img": "portraits/gi/gi-10000086.webp"
+  },
+  {
+   "id": "gi-10000023",
+   "name": "Xiangling",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Pyro",
+    "weapon": "Polearm",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000023.webp"
+  },
+  {
+   "id": "gi-10000093",
+   "name": "Xianyun",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Anemo",
+    "weapon": "Catalyst",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000093.webp"
+  },
+  {
+   "id": "gi-10000026",
+   "name": "Xiao",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Anemo",
+    "weapon": "Polearm",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000026.webp"
+  },
+  {
+   "id": "gi-10000103",
+   "name": "Xilonen",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Geo",
+    "weapon": "Sword",
+    "region": "Natlan"
+   },
+   "img": "portraits/gi/gi-10000103.webp"
+  },
+  {
+   "id": "gi-10000025",
+   "name": "Xingqiu",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Hydro",
+    "weapon": "Sword",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000025.webp"
+  },
+  {
+   "id": "gi-10000044",
+   "name": "Xinyan",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Pyro",
+    "weapon": "Claymore",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000044.webp"
+  },
+  {
+   "id": "gi-10000058",
+   "name": "Yae Miko",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electro",
+    "weapon": "Catalyst",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000058.webp"
+  },
+  {
+   "id": "gi-10000048",
+   "name": "Yanfei",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Pyro",
+    "weapon": "Catalyst",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000048.webp"
+  },
+  {
+   "id": "gi-10000077",
+   "name": "Yaoyao",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Dendro",
+    "weapon": "Polearm",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000077.webp"
+  },
+  {
+   "id": "gi-10000060",
+   "name": "Yelan",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Hydro",
+    "weapon": "Bow",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000060.webp"
+  },
+  {
+   "id": "gi-10000049",
+   "name": "Yoimiya",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Pyro",
+    "weapon": "Bow",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000049.webp"
+  },
+  {
+   "id": "gi-10000109",
+   "name": "Yumemizuki Mizuki",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Anemo",
+    "weapon": "Catalyst",
+    "region": "Inazuma"
+   },
+   "img": "portraits/gi/gi-10000109.webp"
+  },
+  {
+   "id": "gi-10000064",
+   "name": "Yun Jin",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Geo",
+    "weapon": "Polearm",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000064.webp"
+  },
+  {
+   "id": "gi-10000030",
+   "name": "Zhongli",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Geo",
+    "weapon": "Polearm",
+    "region": "Liyue"
+   },
+   "img": "portraits/gi/gi-10000030.webp"
+  },
+  {
+   "id": "gi-10000126",
+   "name": "Zibai",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Geo",
+    "weapon": "Sword",
+    "region": "Nod-Krai"
+   },
+   "img": "portraits/gi/gi-10000126.webp"
+  }
+ ],
+ "hsr": [
+  {
+   "id": "hsr-1308",
+   "name": "Acheron",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Lightning",
+    "path": "Nihility"
+   },
+   "img": "portraits/hsr/hsr-1308.webp"
+  },
+  {
+   "id": "hsr-1511",
+   "name": "Aeon ★ Aha",
+   "rarity": 5,
+   "attrs": {
+    "element": "Quantum",
+    "path": "Elation"
+   },
+   "img": "portraits/hsr/hsr-1511.webp"
+  },
+  {
+   "id": "hsr-1402",
+   "name": "Aglaea",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Lightning",
+    "path": "Remembrance"
+   },
+   "img": "portraits/hsr/hsr-1402.webp"
+  },
+  {
+   "id": "hsr-1405",
+   "name": "Anaxa",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Wind",
+    "path": "Erudition"
+   },
+   "img": "portraits/hsr/hsr-1405.webp"
+  },
+  {
+   "id": "hsr-1015",
+   "name": "Archer",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Quantum",
+    "path": "The Hunt"
+   },
+   "img": "portraits/hsr/hsr-1015.webp"
+  },
+  {
+   "id": "hsr-1302",
+   "name": "Argenti",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Physical",
+    "path": "Erudition"
+   },
+   "img": "portraits/hsr/hsr-1302.webp"
+  },
+  {
+   "id": "hsr-1008",
+   "name": "Arlan",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Lightning",
+    "path": "Destruction"
+   },
+   "img": "portraits/hsr/hsr-1008.webp"
+  },
+  {
+   "id": "hsr-1504",
+   "name": "Ashveil",
+   "rarity": 5,
+   "attrs": {
+    "element": "Lightning",
+    "path": "The Hunt"
+   },
+   "img": "portraits/hsr/hsr-1504.webp"
+  },
+  {
+   "id": "hsr-1009",
+   "name": "Asta",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "path": "Harmony"
+   },
+   "img": "portraits/hsr/hsr-1009.webp"
+  },
+  {
+   "id": "hsr-1304",
+   "name": "Aventurine",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Imaginary",
+    "path": "Preservation"
+   },
+   "img": "portraits/hsr/hsr-1304.webp"
+  },
+  {
+   "id": "hsr-1513",
+   "name": "Aventurine • Waveflair",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Quantum",
+    "path": "Elation"
+   },
+   "img": "portraits/hsr/hsr-1513.webp"
+  },
+  {
+   "id": "hsr-1211",
+   "name": "Bailu",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Lightning",
+    "path": "Abundance"
+   },
+   "img": "portraits/hsr/hsr-1211.webp"
+  },
+  {
+   "id": "hsr-1307",
+   "name": "Black Swan",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Wind",
+    "path": "Nihility"
+   },
+   "img": "portraits/hsr/hsr-1307.webp"
+  },
+  {
+   "id": "hsr-1205",
+   "name": "Blade",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Wind",
+    "path": "Destruction"
+   },
+   "img": "portraits/hsr/hsr-1205.webp"
+  },
+  {
+   "id": "hsr-1315",
+   "name": "Boothill",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Physical",
+    "path": "The Hunt"
+   },
+   "img": "portraits/hsr/hsr-1315.webp"
+  },
+  {
+   "id": "hsr-1101",
+   "name": "Bronya",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Wind",
+    "path": "Harmony"
+   },
+   "img": "portraits/hsr/hsr-1101.webp"
+  },
+  {
+   "id": "hsr-8001",
+   "name": "Caelus",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male"
+   },
+   "img": "portraits/hsr/hsr-8001.webp"
+  },
+  {
+   "id": "hsr-1407",
+   "name": "Castorice",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Quantum",
+    "path": "Remembrance"
+   },
+   "img": "portraits/hsr/hsr-1407.webp"
+  },
+  {
+   "id": "hsr-1412",
+   "name": "Cerydra",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Wind",
+    "path": "Harmony"
+   },
+   "img": "portraits/hsr/hsr-1412.webp"
+  },
+  {
+   "id": "hsr-1406",
+   "name": "Cipher",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Quantum",
+    "path": "Nihility"
+   },
+   "img": "portraits/hsr/hsr-1406.webp"
+  },
+  {
+   "id": "hsr-1107",
+   "name": "Clara",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "path": "Destruction"
+   },
+   "img": "portraits/hsr/hsr-1107.webp"
+  },
+  {
+   "id": "hsr-1415",
+   "name": "Cyrene",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ice",
+    "path": "Remembrance"
+   },
+   "img": "portraits/hsr/hsr-1415.webp"
+  },
+  {
+   "id": "hsr-1002",
+   "name": "Dan Heng",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Wind",
+    "path": "The Hunt"
+   },
+   "img": "portraits/hsr/hsr-1002.webp"
+  },
+  {
+   "id": "hsr-1213",
+   "name": "Dan Heng • Imbibitor Lunae",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Imaginary",
+    "path": "Destruction"
+   },
+   "img": "portraits/hsr/hsr-1213.webp"
+  },
+  {
+   "id": "hsr-1414",
+   "name": "Dan Heng • Permansor Terrae",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Physical",
+    "path": "Preservation"
+   },
+   "img": "portraits/hsr/hsr-1414.webp"
+  },
+  {
+   "id": "hsr-1305",
+   "name": "Dr. Ratio",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Imaginary",
+    "path": "The Hunt"
+   },
+   "img": "portraits/hsr/hsr-1305.webp"
+  },
+  {
+   "id": "hsr-1505",
+   "name": "Evanescia",
+   "rarity": 5,
+   "attrs": {
+    "element": "Physical",
+    "path": "Elation"
+   },
+   "img": "portraits/hsr/hsr-1505.webp"
+  },
+  {
+   "id": "hsr-1413",
+   "name": "Evernight",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ice",
+    "path": "Remembrance"
+   },
+   "img": "portraits/hsr/hsr-1413.webp"
+  },
+  {
+   "id": "hsr-1220",
+   "name": "Feixiao",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Wind",
+    "path": "The Hunt"
+   },
+   "img": "portraits/hsr/hsr-1220.webp"
+  },
+  {
+   "id": "hsr-1310",
+   "name": "Firefly",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "path": "Destruction"
+   },
+   "img": "portraits/hsr/hsr-1310.webp"
+  },
+  {
+   "id": "hsr-1208",
+   "name": "Fu Xuan",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Quantum",
+    "path": "Preservation"
+   },
+   "img": "portraits/hsr/hsr-1208.webp"
+  },
+  {
+   "id": "hsr-1225",
+   "name": "Fugue",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "path": "Nihility"
+   },
+   "img": "portraits/hsr/hsr-1225.webp"
+  },
+  {
+   "id": "hsr-1301",
+   "name": "Gallagher",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Fire",
+    "path": "Abundance"
+   },
+   "img": "portraits/hsr/hsr-1301.webp"
+  },
+  {
+   "id": "hsr-1104",
+   "name": "Gepard",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Ice",
+    "path": "Preservation"
+   },
+   "img": "portraits/hsr/hsr-1104.webp"
+  },
+  {
+   "id": "hsr-1509",
+   "name": "Gilgamesh",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Lightning",
+    "path": "Destruction"
+   },
+   "img": "portraits/hsr/hsr-1509.webp"
+  },
+  {
+   "id": "hsr-1210",
+   "name": "Guinaifen",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "path": "Nihility"
+   },
+   "img": "portraits/hsr/hsr-1210.webp"
+  },
+  {
+   "id": "hsr-1215",
+   "name": "Hanya",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "path": "Harmony"
+   },
+   "img": "portraits/hsr/hsr-1215.webp"
+  },
+  {
+   "id": "hsr-1013",
+   "name": "Herta",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ice",
+    "path": "Erudition"
+   },
+   "img": "portraits/hsr/hsr-1013.webp"
+  },
+  {
+   "id": "hsr-1003",
+   "name": "Himeko",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "path": "Erudition"
+   },
+   "img": "portraits/hsr/hsr-1003.webp"
+  },
+  {
+   "id": "hsr-1510",
+   "name": "Himeko • Nova",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "path": "Erudition"
+   },
+   "img": "portraits/hsr/hsr-1510.webp"
+  },
+  {
+   "id": "hsr-1109",
+   "name": "Hook",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "path": "Destruction"
+   },
+   "img": "portraits/hsr/hsr-1109.webp"
+  },
+  {
+   "id": "hsr-1217",
+   "name": "Huohuo",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Wind",
+    "path": "Abundance"
+   },
+   "img": "portraits/hsr/hsr-1217.webp"
+  },
+  {
+   "id": "hsr-1409",
+   "name": "Hyacine",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Wind",
+    "path": "Remembrance"
+   },
+   "img": "portraits/hsr/hsr-1409.webp"
+  },
+  {
+   "id": "hsr-1410",
+   "name": "Hysilens",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "path": "Nihility"
+   },
+   "img": "portraits/hsr/hsr-1410.webp"
+  },
+  {
+   "id": "hsr-1314",
+   "name": "Jade",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Quantum",
+    "path": "Erudition"
+   },
+   "img": "portraits/hsr/hsr-1314.webp"
+  },
+  {
+   "id": "hsr-1218",
+   "name": "Jiaoqiu",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Fire",
+    "path": "Nihility"
+   },
+   "img": "portraits/hsr/hsr-1218.webp"
+  },
+  {
+   "id": "hsr-1204",
+   "name": "Jing Yuan",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Lightning",
+    "path": "Erudition"
+   },
+   "img": "portraits/hsr/hsr-1204.webp"
+  },
+  {
+   "id": "hsr-1212",
+   "name": "Jingliu",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ice",
+    "path": "Destruction"
+   },
+   "img": "portraits/hsr/hsr-1212.webp"
+  },
+  {
+   "id": "hsr-1005",
+   "name": "Kafka",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Lightning",
+    "path": "Nihility"
+   },
+   "img": "portraits/hsr/hsr-1005.webp"
+  },
+  {
+   "id": "hsr-1222",
+   "name": "Lingsha",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "path": "Abundance"
+   },
+   "img": "portraits/hsr/hsr-1222.webp"
+  },
+  {
+   "id": "hsr-1111",
+   "name": "Luka",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Physical",
+    "path": "Nihility"
+   },
+   "img": "portraits/hsr/hsr-1111.webp"
+  },
+  {
+   "id": "hsr-1203",
+   "name": "Luocha",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Imaginary",
+    "path": "Abundance"
+   },
+   "img": "portraits/hsr/hsr-1203.webp"
+  },
+  {
+   "id": "hsr-1110",
+   "name": "Lynx",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Quantum",
+    "path": "Abundance"
+   },
+   "img": "portraits/hsr/hsr-1110.webp"
+  },
+  {
+   "id": "hsr-1001",
+   "name": "March 7th",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ice",
+    "path": "Preservation"
+   },
+   "img": "portraits/hsr/hsr-1001.webp"
+  },
+  {
+   "id": "hsr-1224",
+   "name": "March 7th (Hunt)",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Imaginary",
+    "path": "The Hunt"
+   },
+   "img": "portraits/hsr/hsr-1224.webp"
+  },
+  {
+   "id": "hsr-1312",
+   "name": "Misha",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Ice",
+    "path": "Destruction"
+   },
+   "img": "portraits/hsr/hsr-1312.webp"
+  },
+  {
+   "id": "hsr-1507",
+   "name": "Mortenax Blade",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Fire",
+    "path": "Nihility"
+   },
+   "img": "portraits/hsr/hsr-1507.webp"
+  },
+  {
+   "id": "hsr-1223",
+   "name": "Moze",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Lightning",
+    "path": "The Hunt"
+   },
+   "img": "portraits/hsr/hsr-1223.webp"
+  },
+  {
+   "id": "hsr-1404",
+   "name": "Mydei",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Imaginary",
+    "path": "Destruction"
+   },
+   "img": "portraits/hsr/hsr-1404.webp"
+  },
+  {
+   "id": "hsr-1105",
+   "name": "Natasha",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "path": "Abundance"
+   },
+   "img": "portraits/hsr/hsr-1105.webp"
+  },
+  {
+   "id": "hsr-1503",
+   "name": "Pearl",
+   "rarity": 5,
+   "attrs": {
+    "element": "Ice",
+    "path": "Elation"
+   },
+   "img": "portraits/hsr/hsr-1503.webp"
+  },
+  {
+   "id": "hsr-1106",
+   "name": "Pela",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ice",
+    "path": "Nihility"
+   },
+   "img": "portraits/hsr/hsr-1106.webp"
+  },
+  {
+   "id": "hsr-1408",
+   "name": "Phainon",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Physical",
+    "path": "Destruction"
+   },
+   "img": "portraits/hsr/hsr-1408.webp"
+  },
+  {
+   "id": "hsr-1201",
+   "name": "Qingque",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Quantum",
+    "path": "Erudition"
+   },
+   "img": "portraits/hsr/hsr-1201.webp"
+  },
+  {
+   "id": "hsr-1317",
+   "name": "Rappa",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Imaginary",
+    "path": "Erudition"
+   },
+   "img": "portraits/hsr/hsr-1317.webp"
+  },
+  {
+   "id": "hsr-1508",
+   "name": "Rin Tohsaka",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Quantum",
+    "path": "Erudition"
+   },
+   "img": "portraits/hsr/hsr-1508.webp"
+  },
+  {
+   "id": "hsr-1309",
+   "name": "Robin",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "path": "Harmony"
+   },
+   "img": "portraits/hsr/hsr-1309.webp"
+  },
+  {
+   "id": "hsr-1512",
+   "name": "Robin • Summeretto",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Wind",
+    "path": "Remembrance"
+   },
+   "img": "portraits/hsr/hsr-1512.webp"
+  },
+  {
+   "id": "hsr-1303",
+   "name": "Ruan Mei",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ice",
+    "path": "Harmony"
+   },
+   "img": "portraits/hsr/hsr-1303.webp"
+  },
+  {
+   "id": "hsr-1014",
+   "name": "Saber",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Wind",
+    "path": "Destruction"
+   },
+   "img": "portraits/hsr/hsr-1014.webp"
+  },
+  {
+   "id": "hsr-1108",
+   "name": "Sampo",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Wind",
+    "path": "Nihility"
+   },
+   "img": "portraits/hsr/hsr-1108.webp"
+  },
+  {
+   "id": "hsr-1102",
+   "name": "Seele",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Quantum",
+    "path": "The Hunt"
+   },
+   "img": "portraits/hsr/hsr-1102.webp"
+  },
+  {
+   "id": "hsr-1103",
+   "name": "Serval",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Lightning",
+    "path": "Erudition"
+   },
+   "img": "portraits/hsr/hsr-1103.webp"
+  },
+  {
+   "id": "hsr-1006",
+   "name": "Silver Wolf",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Quantum",
+    "path": "Nihility"
+   },
+   "img": "portraits/hsr/hsr-1006.webp"
+  },
+  {
+   "id": "hsr-1506",
+   "name": "Silver Wolf LV.999",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Imaginary",
+    "path": "Elation"
+   },
+   "img": "portraits/hsr/hsr-1506.webp"
+  },
+  {
+   "id": "hsr-1306",
+   "name": "Sparkle",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Quantum",
+    "path": "Harmony"
+   },
+   "img": "portraits/hsr/hsr-1306.webp"
+  },
+  {
+   "id": "hsr-1501",
+   "name": "Sparxie",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "path": "Elation"
+   },
+   "img": "portraits/hsr/hsr-1501.webp"
+  },
+  {
+   "id": "hsr-8002",
+   "name": "Stelle",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female"
+   },
+   "img": "portraits/hsr/hsr-8002.webp"
+  },
+  {
+   "id": "hsr-1313",
+   "name": "Sunday",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Imaginary",
+    "path": "Harmony"
+   },
+   "img": "portraits/hsr/hsr-1313.webp"
+  },
+  {
+   "id": "hsr-1206",
+   "name": "Sushang",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "path": "The Hunt"
+   },
+   "img": "portraits/hsr/hsr-1206.webp"
+  },
+  {
+   "id": "hsr-1321",
+   "name": "The Dahlia",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "path": "Nihility"
+   },
+   "img": "portraits/hsr/hsr-1321.webp"
+  },
+  {
+   "id": "hsr-1401",
+   "name": "The Herta",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ice",
+    "path": "Erudition"
+   },
+   "img": "portraits/hsr/hsr-1401.webp"
+  },
+  {
+   "id": "hsr-1202",
+   "name": "Tingyun",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Lightning",
+    "path": "Harmony"
+   },
+   "img": "portraits/hsr/hsr-1202.webp"
+  },
+  {
+   "id": "hsr-1112",
+   "name": "Topaz & Numby",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "path": "The Hunt"
+   },
+   "img": "portraits/hsr/hsr-1112.webp"
+  },
+  {
+   "id": "hsr-1403",
+   "name": "Tribbie",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Quantum",
+    "path": "Harmony"
+   },
+   "img": "portraits/hsr/hsr-1403.webp"
+  },
+  {
+   "id": "hsr-1004",
+   "name": "Welt",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Imaginary",
+    "path": "Nihility"
+   },
+   "img": "portraits/hsr/hsr-1004.webp"
+  },
+  {
+   "id": "hsr-1214",
+   "name": "Xueyi",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Quantum",
+    "path": "Destruction"
+   },
+   "img": "portraits/hsr/hsr-1214.webp"
+  },
+  {
+   "id": "hsr-1209",
+   "name": "Yanqing",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Ice",
+    "path": "The Hunt"
+   },
+   "img": "portraits/hsr/hsr-1209.webp"
+  },
+  {
+   "id": "hsr-1502",
+   "name": "Yao Guang",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "path": "Elation"
+   },
+   "img": "portraits/hsr/hsr-1502.webp"
+  },
+  {
+   "id": "hsr-1207",
+   "name": "Yukong",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Imaginary",
+    "path": "Harmony"
+   },
+   "img": "portraits/hsr/hsr-1207.webp"
+  },
+  {
+   "id": "hsr-1221",
+   "name": "Yunli",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "path": "Destruction"
+   },
+   "img": "portraits/hsr/hsr-1221.webp"
+  }
+ ],
+ "zzz": [
+  {
+   "id": "zzz-1401",
+   "name": "Alice",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "specialty": "Anomaly"
+   },
+   "img": "portraits/zzz/zzz-1401.webp"
+  },
+  {
+   "id": "zzz-1011",
+   "name": "Anby",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electric",
+    "specialty": "Stun"
+   },
+   "img": "portraits/zzz/zzz-1011.webp"
+  },
+  {
+   "id": "zzz-1111",
+   "name": "Anton",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Electric",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1111.webp"
+  },
+  {
+   "id": "zzz-1501",
+   "name": "Aria",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ether",
+    "specialty": "Anomaly"
+   },
+   "img": "portraits/zzz/zzz-1501.webp"
+  },
+  {
+   "id": "zzz-1311",
+   "name": "Astra Yao",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ether",
+    "specialty": "Support"
+   },
+   "img": "portraits/zzz/zzz-1311.webp"
+  },
+  {
+   "id": "zzz-1471",
+   "name": "Banyue",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Fire",
+    "specialty": "Rupture"
+   },
+   "img": "portraits/zzz/zzz-1471.webp"
+  },
+  {
+   "id": "zzz-1121",
+   "name": "Ben",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Fire",
+    "specialty": "Defense"
+   },
+   "img": "portraits/zzz/zzz-1121.webp"
+  },
+  {
+   "id": "zzz-1081",
+   "name": "Billy",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Physical",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1081.webp"
+  },
+  {
+   "id": "zzz-1171",
+   "name": "Burnice",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "specialty": "Anomaly"
+   },
+   "img": "portraits/zzz/zzz-1171.webp"
+  },
+  {
+   "id": "zzz-1071",
+   "name": "Caesar",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "specialty": "Defense"
+   },
+   "img": "portraits/zzz/zzz-1071.webp"
+  },
+  {
+   "id": "zzz-1521",
+   "name": "Cissia",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electric",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1521.webp"
+  },
+  {
+   "id": "zzz-1611",
+   "name": "Claret",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electric",
+    "specialty": "Armorer"
+   },
+   "img": "portraits/zzz/zzz-1611.webp"
+  },
+  {
+   "id": "zzz-1061",
+   "name": "Corin",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1061.webp"
+  },
+  {
+   "id": "zzz-1481",
+   "name": "Dialyn",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "specialty": "Stun"
+   },
+   "img": "portraits/zzz/zzz-1481.webp"
+  },
+  {
+   "id": "zzz-1191",
+   "name": "Ellen",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ice",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1191.webp"
+  },
+  {
+   "id": "zzz-1321",
+   "name": "Evelyn",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1321.webp"
+  },
+  {
+   "id": "zzz-1181",
+   "name": "Grace",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electric",
+    "specialty": "Anomaly"
+   },
+   "img": "portraits/zzz/zzz-1181.webp"
+  },
+  {
+   "id": "zzz-1201",
+   "name": "Harumasa",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Electric",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1201.webp"
+  },
+  {
+   "id": "zzz-1291",
+   "name": "Hugo",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Ice",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1291.webp"
+  },
+  {
+   "id": "zzz-1261",
+   "name": "Jane",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "specialty": "Anomaly"
+   },
+   "img": "portraits/zzz/zzz-1261.webp"
+  },
+  {
+   "id": "zzz-1391",
+   "name": "Ju Fufu",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "specialty": "Stun"
+   },
+   "img": "portraits/zzz/zzz-1391.webp"
+  },
+  {
+   "id": "zzz-1101",
+   "name": "Koleda",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "specialty": "Stun"
+   },
+   "img": "portraits/zzz/zzz-1101.webp"
+  },
+  {
+   "id": "zzz-1161",
+   "name": "Lighter",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Fire",
+    "specialty": "Stun"
+   },
+   "img": "portraits/zzz/zzz-1161.webp"
+  },
+  {
+   "id": "zzz-1451",
+   "name": "Lucia",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ether",
+    "specialty": "Support"
+   },
+   "img": "portraits/zzz/zzz-1451.webp"
+  },
+  {
+   "id": "zzz-1151",
+   "name": "Lucy",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "specialty": "Support"
+   },
+   "img": "portraits/zzz/zzz-1151.webp"
+  },
+  {
+   "id": "zzz-1141",
+   "name": "Lycaon",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Ice",
+    "specialty": "Stun"
+   },
+   "img": "portraits/zzz/zzz-1141.webp"
+  },
+  {
+   "id": "zzz-1441",
+   "name": "Manato",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Fire",
+    "specialty": "Rupture"
+   },
+   "img": "portraits/zzz/zzz-1441.webp"
+  },
+  {
+   "id": "zzz-1091",
+   "name": "Miyabi",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ice",
+    "specialty": "Anomaly"
+   },
+   "img": "portraits/zzz/zzz-1091.webp"
+  },
+  {
+   "id": "zzz-1511",
+   "name": "Nangong Yu",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ether",
+    "specialty": "Stun"
+   },
+   "img": "portraits/zzz/zzz-1511.webp"
+  },
+  {
+   "id": "zzz-1021",
+   "name": "Nekomata",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1021.webp"
+  },
+  {
+   "id": "zzz-1031",
+   "name": "Nicole",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ether",
+    "specialty": "Support"
+   },
+   "img": "portraits/zzz/zzz-1031.webp"
+  },
+  {
+   "id": "zzz-1571",
+   "name": "Norma",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "specialty": "Stun"
+   },
+   "img": "portraits/zzz/zzz-1571.webp"
+  },
+  {
+   "id": "zzz-1301",
+   "name": "Orphie & Magus",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1301.webp"
+  },
+  {
+   "id": "zzz-1421",
+   "name": "Pan Yinhu",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Physical",
+    "specialty": "Defense"
+   },
+   "img": "portraits/zzz/zzz-1421.webp"
+  },
+  {
+   "id": "zzz-1641",
+   "name": "Phoenix",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "specialty": "Anomaly"
+   },
+   "img": "portraits/zzz/zzz-1641.webp"
+  },
+  {
+   "id": "zzz-1281",
+   "name": "Piper",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "specialty": "Anomaly"
+   },
+   "img": "portraits/zzz/zzz-1281.webp"
+  },
+  {
+   "id": "zzz-1541",
+   "name": "Promeia",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ice",
+    "specialty": "Anomaly"
+   },
+   "img": "portraits/zzz/zzz-1541.webp"
+  },
+  {
+   "id": "zzz-1351",
+   "name": "Pulchra",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "specialty": "Stun"
+   },
+   "img": "portraits/zzz/zzz-1351.webp"
+  },
+  {
+   "id": "zzz-1551",
+   "name": "Pyrois",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Ether",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1551.webp"
+  },
+  {
+   "id": "zzz-1251",
+   "name": "Qingyi",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electric",
+    "specialty": "Stun"
+   },
+   "img": "portraits/zzz/zzz-1251.webp"
+  },
+  {
+   "id": "zzz-1581",
+   "name": "Remielle",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Lumen",
+    "specialty": "Anomaly"
+   },
+   "img": "portraits/zzz/zzz-1581.webp"
+  },
+  {
+   "id": "zzz-1211",
+   "name": "Rina",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electric",
+    "specialty": "Support"
+   },
+   "img": "portraits/zzz/zzz-1211.webp"
+  },
+  {
+   "id": "zzz-1621",
+   "name": "Roxy",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Wind",
+    "specialty": "Stun"
+   },
+   "img": "portraits/zzz/zzz-1621.webp"
+  },
+  {
+   "id": "zzz-1461",
+   "name": "Seed",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electric",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1461.webp"
+  },
+  {
+   "id": "zzz-1271",
+   "name": "Seth",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Male",
+    "element": "Electric",
+    "specialty": "Defense"
+   },
+   "img": "portraits/zzz/zzz-1271.webp"
+  },
+  {
+   "id": "zzz-1631",
+   "name": "Severian",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Wind",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1631.webp"
+  },
+  {
+   "id": "zzz-1591",
+   "name": "Sigrid",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ice",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1591.webp"
+  },
+  {
+   "id": "zzz-1381",
+   "name": "Soldier 0 - Anby",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electric",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1381.webp"
+  },
+  {
+   "id": "zzz-1041",
+   "name": "Soldier 11",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Fire",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1041.webp"
+  },
+  {
+   "id": "zzz-1131",
+   "name": "Soukaku",
+   "rarity": 4,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ice",
+    "specialty": "Support"
+   },
+   "img": "portraits/zzz/zzz-1131.webp"
+  },
+  {
+   "id": "zzz-1531",
+   "name": "Starlight - Billy",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Male",
+    "element": "Physical",
+    "specialty": "Rupture"
+   },
+   "img": "portraits/zzz/zzz-1531.webp"
+  },
+  {
+   "id": "zzz-1491",
+   "name": "Sunna",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "specialty": "Support"
+   },
+   "img": "portraits/zzz/zzz-1491.webp"
+  },
+  {
+   "id": "zzz-1361",
+   "name": "Trigger",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electric",
+    "specialty": "Stun"
+   },
+   "img": "portraits/zzz/zzz-1361.webp"
+  },
+  {
+   "id": "zzz-1561",
+   "name": "Velina",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Wind",
+    "specialty": "Anomaly"
+   },
+   "img": "portraits/zzz/zzz-1561.webp"
+  },
+  {
+   "id": "zzz-1331",
+   "name": "Vivian",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ether",
+    "specialty": "Anomaly"
+   },
+   "img": "portraits/zzz/zzz-1331.webp"
+  },
+  {
+   "id": "zzz-1221",
+   "name": "Yanagi",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Electric",
+    "specialty": "Anomaly"
+   },
+   "img": "portraits/zzz/zzz-1221.webp"
+  },
+  {
+   "id": "zzz-1431",
+   "name": "Ye Shunguang",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1431.webp"
+  },
+  {
+   "id": "zzz-1051",
+   "name": "Yidhari",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ice",
+    "specialty": "Rupture"
+   },
+   "img": "portraits/zzz/zzz-1051.webp"
+  },
+  {
+   "id": "zzz-1371",
+   "name": "Yixuan",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ether",
+    "specialty": "Rupture"
+   },
+   "img": "portraits/zzz/zzz-1371.webp"
+  },
+  {
+   "id": "zzz-1411",
+   "name": "Yuzuha",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Physical",
+    "specialty": "Support"
+   },
+   "img": "portraits/zzz/zzz-1411.webp"
+  },
+  {
+   "id": "zzz-1341",
+   "name": "Zhao",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ice",
+    "specialty": "Defense"
+   },
+   "img": "portraits/zzz/zzz-1341.webp"
+  },
+  {
+   "id": "zzz-1241",
+   "name": "Zhu Yuan",
+   "rarity": 5,
+   "attrs": {
+    "gender": "Female",
+    "element": "Ether",
+    "specialty": "Attack"
+   },
+   "img": "portraits/zzz/zzz-1241.webp"
+  }
+ ]
+}

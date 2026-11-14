@@ -1,0 +1,258 @@
+{
+ "_comment": "Per-character fixes merged over API data. Keys are roster ids. Any field (name, rarity, gender, element, ...) can be overridden; null removes it.",
+ "hsr-1001": {
+  "gender": "Female"
+ },
+ "hsr-1003": {
+  "gender": "Female"
+ },
+ "hsr-1005": {
+  "gender": "Female"
+ },
+ "hsr-1006": {
+  "gender": "Female"
+ },
+ "hsr-1009": {
+  "gender": "Female"
+ },
+ "hsr-1013": {
+  "gender": "Female"
+ },
+ "hsr-1014": {
+  "gender": "Female"
+ },
+ "hsr-1101": {
+  "gender": "Female"
+ },
+ "hsr-1102": {
+  "gender": "Female"
+ },
+ "hsr-1103": {
+  "gender": "Female"
+ },
+ "hsr-1105": {
+  "gender": "Female"
+ },
+ "hsr-1106": {
+  "gender": "Female"
+ },
+ "hsr-1107": {
+  "gender": "Female"
+ },
+ "hsr-1109": {
+  "gender": "Female"
+ },
+ "hsr-1110": {
+  "gender": "Female"
+ },
+ "hsr-1112": {
+  "gender": "Female"
+ },
+ "hsr-1201": {
+  "gender": "Female"
+ },
+ "hsr-1202": {
+  "gender": "Female"
+ },
+ "hsr-1206": {
+  "gender": "Female"
+ },
+ "hsr-1207": {
+  "gender": "Female"
+ },
+ "hsr-1208": {
+  "gender": "Female"
+ },
+ "hsr-1210": {
+  "gender": "Female"
+ },
+ "hsr-1211": {
+  "gender": "Female"
+ },
+ "hsr-1212": {
+  "gender": "Female"
+ },
+ "hsr-1214": {
+  "gender": "Female"
+ },
+ "hsr-1215": {
+  "gender": "Female"
+ },
+ "hsr-1217": {
+  "gender": "Female"
+ },
+ "hsr-1220": {
+  "gender": "Female"
+ },
+ "hsr-1221": {
+  "gender": "Female"
+ },
+ "hsr-1222": {
+  "gender": "Female"
+ },
+ "hsr-1224": {
+  "gender": "Female"
+ },
+ "hsr-1225": {
+  "gender": "Female"
+ },
+ "hsr-1303": {
+  "gender": "Female"
+ },
+ "hsr-1306": {
+  "gender": "Female"
+ },
+ "hsr-1307": {
+  "gender": "Female"
+ },
+ "hsr-1308": {
+  "gender": "Female"
+ },
+ "hsr-1309": {
+  "gender": "Female"
+ },
+ "hsr-1310": {
+  "gender": "Female"
+ },
+ "hsr-1314": {
+  "gender": "Female"
+ },
+ "hsr-1317": {
+  "gender": "Female"
+ },
+ "hsr-1321": {
+  "gender": "Female"
+ },
+ "hsr-1401": {
+  "gender": "Female"
+ },
+ "hsr-1402": {
+  "gender": "Female"
+ },
+ "hsr-1403": {
+  "gender": "Female"
+ },
+ "hsr-1406": {
+  "gender": "Female"
+ },
+ "hsr-1407": {
+  "gender": "Female"
+ },
+ "hsr-1409": {
+  "gender": "Female"
+ },
+ "hsr-1410": {
+  "gender": "Female"
+ },
+ "hsr-1412": {
+  "gender": "Female"
+ },
+ "hsr-1413": {
+  "gender": "Female"
+ },
+ "hsr-1415": {
+  "gender": "Female"
+ },
+ "hsr-1501": {
+  "gender": "Female"
+ },
+ "hsr-1502": {
+  "gender": "Female"
+ },
+ "hsr-1506": {
+  "gender": "Female"
+ },
+ "hsr-1508": {
+  "gender": "Female"
+ },
+ "hsr-1510": {
+  "gender": "Female"
+ },
+ "hsr-1512": {
+  "gender": "Female"
+ },
+ "hsr-1002": {
+  "gender": "Male"
+ },
+ "hsr-1004": {
+  "gender": "Male"
+ },
+ "hsr-1008": {
+  "gender": "Male"
+ },
+ "hsr-1015": {
+  "gender": "Male"
+ },
+ "hsr-1104": {
+  "gender": "Male"
+ },
+ "hsr-1108": {
+  "gender": "Male"
+ },
+ "hsr-1111": {
+  "gender": "Male"
+ },
+ "hsr-1203": {
+  "gender": "Male"
+ },
+ "hsr-1204": {
+  "gender": "Male"
+ },
+ "hsr-1205": {
+  "gender": "Male"
+ },
+ "hsr-1209": {
+  "gender": "Male"
+ },
+ "hsr-1213": {
+  "gender": "Male"
+ },
+ "hsr-1218": {
+  "gender": "Male"
+ },
+ "hsr-1223": {
+  "gender": "Male"
+ },
+ "hsr-1301": {
+  "gender": "Male"
+ },
+ "hsr-1302": {
+  "gender": "Male"
+ },
+ "hsr-1304": {
+  "gender": "Male"
+ },
+ "hsr-1305": {
+  "gender": "Male"
+ },
+ "hsr-1312": {
+  "gender": "Male"
+ },
+ "hsr-1313": {
+  "gender": "Male"
+ },
+ "hsr-1315": {
+  "gender": "Male"
+ },
+ "hsr-1404": {
+  "gender": "Male"
+ },
+ "hsr-1405": {
+  "gender": "Male"
+ },
+ "hsr-1408": {
+  "gender": "Male"
+ },
+ "hsr-1414": {
+  "gender": "Male"
+ },
+ "hsr-1507": {
+  "gender": "Male"
+ },
+ "hsr-1509": {
+  "gender": "Male"
+ },
+ "hsr-1513": {
+  "gender": "Male"
+ }
+}
