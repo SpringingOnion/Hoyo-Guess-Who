@@ -6,7 +6,8 @@
     "dev": "vite --host",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host",
-    "roster": "node scripts/build-roster.mjs"
+    "roster": "node scripts/build-roster.mjs",
+    "update": "npm run roster && npm run build"
   },
   "keywords": [],
   "author": "",

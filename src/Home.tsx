@@ -1,5 +1,10 @@
-import { useState } from 'react';
-import { GAMES, GAME_IDS, GameId, ROSTER, SIZES, makeCode, parseCode, GameState } from './game';
+import { useMemo, useState } from 'react';
+import {
+  GAMES, GAME_IDS, GameId, GameState, Filters, MIN_POOL, ROSTER, SIZES,
+  decodeFilters, filterGroups, loadFilters, makeCode, parseCode, poolFor, saveFilters,
+} from './game';
+import UpdateButton from './UpdateButton';
+import meta from './data/meta.json';
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -19,8 +24,34 @@ const COVER: Record<GameId, string[]> = {
 export default function Home({ saved, onStart, onResume }: Props) {
   const [game, setGame] = useState<GameId>(saved?.game ?? 'gi');
   const [size, setSize] = useState(saved?.size ?? 24);
+  const [allFilters, setAllFilters] = useState(loadFilters);
+  const [showFilters, setShowFilters] = useState(false);
   const [code, setCode] = useState('');
+
+  const filters = allFilters[game] ?? {};
+  const pool = useMemo(() => poolFor(game, filters), [game, filters]);
+  const filtered = pool.length < ROSTER[game].length;
   const parsed = parseCode(code);
+  const joinPool = parsed ? poolFor(parsed.game, decodeFilters(parsed.game, parsed.filterCode)).length : 0;
+
+  const setFilters = (f: Filters) => {
+    const next = { ...allFilters, [game]: f };
+    setAllFilters(next);
+    saveFilters(next);
+  };
+
+  const toggle = (key: string, value: string) => {
+    const ex = filters[key] ?? [];
+    const nextEx = ex.includes(value) ? ex.filter((v) => v !== value) : [...ex, value];
+    const next = { ...filters, [key]: nextEx };
+    if (!nextEx.length) delete next[key];
+    setFilters(next);
+  };
+
+  const only = (key: string, value: string) => {
+    const group = filterGroups(game).find((g) => g.key === key)!;
+    setFilters({ ...filters, [key]: group.values.filter((v) => v !== value) });
+  };
 
   return (
     <div className="home" data-game={game}>
@@ -63,7 +94,48 @@ export default function Home({ saved, onStart, onResume }: Props) {
         </div>
       </section>
 
-      <button className="btn wide primary" onClick={() => onStart(makeCode(game, size))}>
+      <section>
+        <div className="filter-head">
+          <h2>3. Filters</h2>
+          {filtered && <button className="link" onClick={() => setFilters({})}>Reset</button>}
+        </div>
+        <button className={`filter-summary ${filtered ? 'active' : ''}`} onClick={() => setShowFilters((v) => !v)}>
+          <span>
+            {filtered ? `${pool.length} of ${ROSTER[game].length} characters` : `All ${ROSTER[game].length} characters`}
+          </span>
+          <span className="chev">{showFilters ? '▴' : '▾'}</span>
+        </button>
+        {showFilters && (
+          <div className="filters">
+            <p className="hint">Tap to include or exclude. Long-press to pick only that one.</p>
+            {filterGroups(game).map((g) => (
+              <div key={g.key} className="filter-group">
+                <h3>{g.label}</h3>
+                <div className="chips">
+                  {g.values.map((v) => {
+                    const on = !filters[g.key]?.includes(v);
+                    return (
+                      <button
+                        key={v}
+                        className={on ? 'on' : ''}
+                        onClick={() => toggle(g.key, v)}
+                        onContextMenu={(e) => { e.preventDefault(); only(g.key, v); }}
+                      >{v}</button>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+        {pool.length < MIN_POOL ? (
+          <p className="hint warn">Too few characters match. Loosen the filters.</p>
+        ) : pool.length < size ? (
+          <p className="hint">Only {pool.length} characters match, so the board will have {pool.length}.</p>
+        ) : null}
+      </section>
+
+      <button className="btn wide primary" disabled={pool.length < MIN_POOL} onClick={() => onStart(makeCode(game, size, filters))}>
         Start new game
       </button>
 
@@ -73,20 +145,32 @@ export default function Home({ saved, onStart, onResume }: Props) {
           <input
             value={code}
             onChange={(e) => setCode(e.target.value.toUpperCase())}
-            placeholder="G24-K7QX"
+            placeholder="G24-K7QXA"
             autoCapitalize="characters"
             autoCorrect="off"
             spellCheck={false}
-            maxLength={9}
+            maxLength={20}
           />
-          <button className="btn" disabled={!parsed} onClick={() => parsed && onStart(code)}>Join</button>
+          <button className="btn" disabled={!parsed || joinPool < 2} onClick={() => parsed && onStart(code)}>Join</button>
         </div>
-        {code && !parsed && <p className="hint">Codes look like G24-K7QX (letter = game, number = board size).</p>}
-        {parsed && <p className="hint">{GAMES[parsed.game].name} · {parsed.size} characters</p>}
+        {code && !parsed && <p className="hint">Enter the code shown at the top of your friend's board, for example G24-K7QXA.</p>}
+        {parsed && (
+          <p className="hint">
+            {GAMES[parsed.game].name} · {Math.min(parsed.size, joinPool)} characters{parsed.filterCode ? ' · filtered' : ''}
+          </p>
+        )}
+        {parsed && !parsed.sameVersion && (
+          <p className="hint warn">
+            This code came from a version of the app with a different character list, so your boards won't match.
+            Both of you: tap <b>Check for updates</b> below, then start a new game.
+          </p>
+        )}
       </section>
 
       <footer className="credits">
-        Fan-made, non-commercial. Character art © HoYoverse.
+        <UpdateButton />
+        <div>Characters updated {meta.updated}</div>
+        <div>Fan-made, non-commercial. Character art © HoYoverse.</div>
       </footer>
     </div>
   );

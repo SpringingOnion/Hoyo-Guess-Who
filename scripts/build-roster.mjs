@@ -59,7 +59,7 @@ async function genshin() {
         gender: GI_GENDER[c.bodyType],
         element: isTraveler ? undefined : GI_ELEMENT[c.element],
         weapon: data.types[c.weaponType] ?? c.weaponType,
-        region: isTraveler ? undefined : GI_REGION[c.region] ?? 'Other',
+        region: isTraveler ? 'Other' : GI_REGION[c.region] ?? 'Other',
       },
       src: `https://gi.yatta.moe/assets/UI/${c.icon}.png`,
     });
@@ -161,25 +161,61 @@ async function pool(items, n, fn) {
 }
 
 // ---------------------------------------------------------------- main
-const overrides = JSON.parse(await fs.readFile(OVERRIDES, 'utf8'));
+const OUT_META = path.join(ROOT, 'src/data/meta.json');
+const readJson = async (p, fallback) => { try { return JSON.parse(await fs.readFile(p, 'utf8')); } catch { return fallback; } };
+
+const overrides = await readJson(OVERRIDES, {});
+const previous = await readJson(OUT_JSON, {});
 const roster = {};
+let failed = false;
+
 for (const [game, load] of [['gi', genshin], ['hsr', starRail], ['zzz', zenless]]) {
   console.log(`Fetching ${game}...`);
-  const chars = await load();
-  await fs.mkdir(path.join(OUT_IMG, game), { recursive: true });
+  let chars;
+  try {
+    chars = await load();
+  } catch (e) {
+    // A source being down shouldn't wipe out that game's characters.
+    console.warn(`  ! ${game} source failed (${e.message}); keeping the previous list`);
+    roster[game] = previous[game] ?? [];
+    failed = true;
+    continue;
+  }
+  const dir = path.join(OUT_IMG, game);
+  await fs.mkdir(dir, { recursive: true });
   const ok = await pool(chars, 6, (c) => downloadPortrait(game, c));
   roster[game] = chars
     .filter((_, i) => ok[i])
     .map(({ src, ...c }) => {
-      const o = overrides[c.id] ?? {};
-      const { name, rarity, ...attrOverrides } = o;
+      const { _comment, name, rarity, ...attrOverrides } = overrides[c.id] ?? {};
       const attrs = { ...c.attrs, ...attrOverrides };
       for (const k of Object.keys(attrs)) if (attrs[k] == null) delete attrs[k];
       return { ...c, name: name ?? c.name, rarity: rarity ?? c.rarity, attrs, img: `portraits/${game}/${c.id}.webp` };
     })
     .sort((a, b) => a.name.localeCompare(b.name));
+
+  // Report changes and tidy up portraits of characters that no longer exist.
+  const before = new Set((previous[game] ?? []).map((c) => c.id));
+  const now = new Set(roster[game].map((c) => c.id));
+  const added = roster[game].filter((c) => !before.has(c.id));
+  const removed = (previous[game] ?? []).filter((c) => !now.has(c.id));
+  for (const f of await fs.readdir(dir)) if (!now.has(f.replace(/\.webp$/, ''))) await fs.rm(path.join(dir, f));
   console.log(`  ${roster[game].length} characters`);
+  if (before.size && added.length) console.log(`  + new: ${added.map((c) => c.name).join(', ')}`);
+  if (removed.length) console.log(`  - removed: ${removed.map((c) => c.name).join(', ')}`);
+  const noGender = added.filter((c) => !c.attrs.gender);
+  if (before.size && noGender.length) console.log(`  ? no gender (add to data/overrides.json): ${noGender.map((c) => `${c.id} ${c.name}`).join(', ')}`);
 }
+
+const json = JSON.stringify(roster, null, 1);
+const changed = json !== JSON.stringify(previous, null, 1);
 await fs.mkdir(path.dirname(OUT_JSON), { recursive: true });
-await fs.writeFile(OUT_JSON, JSON.stringify(roster, null, 1));
-console.log(`Wrote ${path.relative(ROOT, OUT_JSON)}`);
+if (changed || !(await exists(OUT_META))) {
+  await fs.writeFile(OUT_JSON, json);
+  const counts = Object.fromEntries(Object.entries(roster).map(([g, l]) => [g, l.length]));
+  await fs.writeFile(OUT_META, JSON.stringify({ updated: new Date().toISOString().slice(0, 10), counts }, null, 1) + '\n');
+  console.log(changed ? 'Character list updated.' : 'Wrote meta.json.');
+} else {
+  console.log('No changes, already up to date.');
+}
+if (failed) process.exitCode = 1;

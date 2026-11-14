@@ -5,8 +5,8 @@ It's an installable web app (PWA): no Play Store, no APK, and it works offline o
 
 ## How to play
 
-1. Player 1 picks a game and board size and taps **Start new game**. A code like `G24-K7QX` appears in the top bar.
-2. Player 2 enters that code under **Join a friend's game**, which gives both phones the same board.
+1. Player 1 picks a game, a board size and optionally **filters** (rarity, element, weapon/path/specialty, region, gender), then taps **Start new game**. A code like `G24-K7QXA` appears in the top bar.
+2. Player 2 enters that code under **Join a friend's game**, which gives both phones the same board. The filters are part of the code.
 3. Each phone secretly picks its own character. Tap **My character** to see it.
 4. Take turns asking yes/no questions out loud and tap cards to flip them down. **Undo** reverses a mistake.
 5. **Guess** shows your guess full-screen for the other player to confirm.
@@ -24,10 +24,20 @@ npm install
 npm run dev        # http://localhost:5173 (also on your LAN IP for phone testing)
 npm run build      # production build in dist/
 npm run roster     # refresh characters + portraits from the data sources
+npm run update     # roster + build
 ```
 
-When a new character is released, run `npm run roster`, commit the new files and redeploy.
-Both players need the same version for room codes to produce matching boards. Installed copies update themselves the next time they're opened online.
+## Getting new characters
+
+**Automatic (GitHub Pages):** `.github/workflows/update-characters.yml` checks the data sources every Wednesday and Thursday.
+If there are new characters it commits them and redeploys. You can also run it any time from the repo's
+*Actions → Update characters → Run workflow*. The run summary lists who was added.
+
+**By hand:** run `npm run update` (fetches characters and builds), then commit and push, or re-upload `dist/`.
+The script prints new and removed characters, and flags new ones missing a gender so you can add them to `data/overrides.json`.
+
+**On the phones:** installed copies pick up a new version when opened online, or tap **Check for updates** at the bottom of the home screen.
+Room codes include a one-letter fingerprint of the character list. If two phones have different lists, the joining phone shows a warning instead of quietly building a different board.
 
 ### Data
 

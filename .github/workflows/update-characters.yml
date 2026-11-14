@@ -1,0 +1,50 @@
+name: Update characters
+
+# Checks the data sources for new characters every Wednesday and Thursday (patch days)
+# and redeploys if anything changed. It can also be run by hand from the Actions tab.
+on:
+  schedule:
+    - cron: '0 8 * * 3,4'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run roster | tee roster.log
+      - id: commit
+        run: |
+          if git diff --quiet && [ -z "$(git ls-files --others --exclude-standard public/portraits)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data public/portraits
+          git commit -m "Update characters" -m "$(grep -E '^\s+[-+?] ' roster.log || true)"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Summary
+        run: |
+          echo '### Character update' >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          cat roster.log >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+
+  deploy:
+    needs: update
+    if: needs.update.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy.yml

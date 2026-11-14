@@ -6,7 +6,8 @@
    "rarity": 5,
    "attrs": {
     "gender": "Male",
-    "weapon": "Sword"
+    "weapon": "Sword",
+    "region": "Other"
    },
    "img": "portraits/gi/gi-10000005.webp"
   },
@@ -796,7 +797,8 @@
    "rarity": 5,
    "attrs": {
     "gender": "Female",
-    "weapon": "Sword"
+    "weapon": "Sword",
+    "region": "Other"
    },
    "img": "portraits/gi/gi-10000007.webp"
   },
