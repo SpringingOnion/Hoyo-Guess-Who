@@ -93,6 +93,8 @@ export interface GameState {
   secret: string;
   history: string[][];
   won?: boolean;
+  /** false until the player has chosen (or accepted a random) secret character */
+  chosen?: boolean;
 }
 
 export function pickSecret(board: string[], avoid?: string): string {
@@ -104,7 +106,7 @@ export function newGame(game: GameId, filters: Filters): GameState | null {
   const pool = poolFor(game, filters);
   if (pool.length < MIN_POOL) return null;
   const board = pool.map((c) => c.id);
-  return { game, filtered: board.length < ROSTER[game].length, board, down: [], secret: pickSecret(board), history: [] };
+  return { game, filtered: board.length < ROSTER[game].length, board, down: [], secret: pickSecret(board), history: [], chosen: false };
 }
 
 const KEY = 'hgw:game';

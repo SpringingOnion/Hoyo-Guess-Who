@@ -154,6 +154,17 @@ h1, h2 { margin: 0; }
 .answer-row .btn { min-height: 60px; font-size: 1.1rem; }
 
 .pick-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.pick-grid.dense { grid-template-columns: repeat(5, 1fr); gap: 5px; }
+.pick-grid.dense .card .name { font-size: 0.62rem; }
+.pick-grid .card.selected { border: 2px solid var(--accent); }
+.pick-grid .empty { grid-column: 1 / -1; text-align: center; padding: 20px 0; }
+.pick-actions { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 8px; }
+.search {
+  position: sticky; top: -22px; z-index: 1; width: 100%; min-height: 46px; padding: 0 14px; border-radius: 12px;
+  border: 1px solid var(--line); background: var(--panel-2); color: var(--text); font: inherit; font-size: 1rem;
+  box-shadow: 0 -12px 0 var(--panel);
+}
+.search:focus { outline: 2px solid var(--accent); border-color: transparent; }
 .guess { display: flex; flex-direction: column; gap: 14px; text-align: center; }
 .guess h2 { padding: 0; }
 .menu { display: flex; flex-direction: column; gap: 10px; padding-top: 30px; }
