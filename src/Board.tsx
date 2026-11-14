@@ -10,7 +10,7 @@ interface Props {
   onNewGame: () => void;
 }
 
-type Sheet = null | 'secret' | 'guess' | 'code' | 'menu';
+type Sheet = null | 'secret' | 'guess' | 'menu';
 
 export default function Board({ state, setState, onHome, onNewGame }: Props) {
   const [sheet, setSheet] = useState<Sheet>(null);
@@ -41,14 +41,13 @@ export default function Board({ state, setState, onHome, onNewGame }: Props) {
       <header className="bar top">
         <button className="icon-btn" onClick={onHome} aria-label="Home">‹</button>
         <div className="title">
-          <strong>{info.name}</strong>
+          <strong>{info.name}{state.filtered ? ' · filtered' : ''}</strong>
           <span>{up.length} of {chars.length} left</span>
         </div>
-        <button className="code-chip mono" onClick={() => setSheet('code')}>{state.code}</button>
         <button className="icon-btn" onClick={() => setSheet('menu')} aria-label="Menu">⋮</button>
       </header>
 
-      <main className={`grid size-${chars.length}`}>
+      <main className={`grid ${chars.length > 30 ? 'dense' : ''}`}>
         {chars.map((c) => (
           <button key={c.id} className={`card ${down.has(c.id) ? 'down' : ''}`} onClick={() => toggle(c.id)}>
             <img src={BASE + c.img} alt="" loading="lazy" draggable={false} />
@@ -75,19 +74,12 @@ export default function Board({ state, setState, onHome, onNewGame }: Props) {
           onWrong={(id) => { commit([...state.down, id]); setSheet(null); }}
           onRight={() => { setState({ ...state, won: true }); setSheet(null); }} />
       )}
-      {sheet === 'code' && (
-        <Modal onClose={() => setSheet(null)}>
-          <p className="muted">Your friend enters this code on their phone to get the same board:</p>
-          <div className="big-code mono">{state.code}</div>
-          <p className="muted small">Both phones should be on the same app version so the boards match.</p>
-        </Modal>
-      )}
       {sheet === 'menu' && (
         <Modal onClose={() => setSheet(null)}>
           <div className="menu">
             <button className="btn wide" onClick={() => { replay(true); setSheet(null); }}>Play again, same board</button>
             <button className="btn wide" onClick={() => { commit([]); setSheet(null); }}>Flip all cards back up</button>
-            <button className="btn wide" onClick={onNewGame}>New game / new board</button>
+            <button className="btn wide" onClick={onNewGame}>New game</button>
           </div>
         </Modal>
       )}
@@ -99,7 +91,7 @@ export default function Board({ state, setState, onHome, onNewGame }: Props) {
             <p className="muted">Your character was</p>
             <CharacterBadge c={secret} />
             <button className="btn wide primary" onClick={() => replay(true)}>Play again, same board</button>
-            <button className="btn wide" onClick={onNewGame}>New board</button>
+            <button className="btn wide" onClick={onNewGame}>New game</button>
           </div>
         </Modal>
       )}

@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import {
-  GAMES, GAME_IDS, GameId, GameState, Filters, MIN_POOL, ROSTER, SIZES,
-  decodeFilters, filterGroups, loadFilters, makeCode, parseCode, poolFor, saveFilters,
+  GAMES, GAME_IDS, GameId, GameState, Filters, MIN_POOL, ROSTER,
+  filterGroups, loadFilters, poolFor, saveFilters,
 } from './game';
 import UpdateButton from './UpdateButton';
 import meta from './data/meta.json';
@@ -10,7 +10,7 @@ const BASE = import.meta.env.BASE_URL;
 
 interface Props {
   saved: GameState | null;
-  onStart: (code: string) => void;
+  onStart: (game: GameId, filters: Filters) => void;
   onResume: () => void;
 }
 
@@ -23,16 +23,12 @@ const COVER: Record<GameId, string[]> = {
 
 export default function Home({ saved, onStart, onResume }: Props) {
   const [game, setGame] = useState<GameId>(saved?.game ?? 'gi');
-  const [size, setSize] = useState(saved?.size ?? 24);
   const [allFilters, setAllFilters] = useState(loadFilters);
   const [showFilters, setShowFilters] = useState(false);
-  const [code, setCode] = useState('');
 
   const filters = allFilters[game] ?? {};
   const pool = useMemo(() => poolFor(game, filters), [game, filters]);
   const filtered = pool.length < ROSTER[game].length;
-  const parsed = parseCode(code);
-  const joinPool = parsed ? poolFor(parsed.game, decodeFilters(parsed.game, parsed.filterCode)).length : 0;
 
   const setFilters = (f: Filters) => {
     const next = { ...allFilters, [game]: f };
@@ -57,12 +53,12 @@ export default function Home({ saved, onStart, onResume }: Props) {
     <div className="home" data-game={game}>
       <header className="home-head">
         <h1>Hoyo Guess Who</h1>
-        <p>Both players open the same board. Each phone gets its own secret character.</p>
+        <p>Pick a game and both players get every character on the board. Each phone picks its own secret character.</p>
       </header>
 
       {saved && !saved.won && (
         <button className="btn wide resume" onClick={onResume}>
-          Resume {GAMES[saved.game].name} · <span className="mono">{saved.code}</span>
+          Resume {GAMES[saved.game].name}{saved.filtered ? ' (filtered)' : ''}
         </button>
       )}
 
@@ -86,17 +82,8 @@ export default function Home({ saved, onStart, onResume }: Props) {
       </section>
 
       <section>
-        <h2>2. Board size</h2>
-        <div className="seg">
-          {SIZES.map((s) => (
-            <button key={s} className={size === s ? 'on' : ''} onClick={() => setSize(s)}>{s}</button>
-          ))}
-        </div>
-      </section>
-
-      <section>
         <div className="filter-head">
-          <h2>3. Filters</h2>
+          <h2>2. Filters (optional)</h2>
           {filtered && <button className="link" onClick={() => setFilters({})}>Reset</button>}
         </div>
         <button className={`filter-summary ${filtered ? 'active' : ''}`} onClick={() => setShowFilters((v) => !v)}>
@@ -128,44 +115,12 @@ export default function Home({ saved, onStart, onResume }: Props) {
             ))}
           </div>
         )}
-        {pool.length < MIN_POOL ? (
-          <p className="hint warn">Too few characters match. Loosen the filters.</p>
-        ) : pool.length < size ? (
-          <p className="hint">Only {pool.length} characters match, so the board will have {pool.length}.</p>
-        ) : null}
+        {pool.length < MIN_POOL && <p className="hint warn">Too few characters match. Loosen the filters.</p>}
       </section>
 
-      <button className="btn wide primary" disabled={pool.length < MIN_POOL} onClick={() => onStart(makeCode(game, size, filters))}>
-        Start new game
+      <button className="btn wide primary" disabled={pool.length < MIN_POOL} onClick={() => onStart(game, filters)}>
+        Start game · {pool.length} characters
       </button>
-
-      <section className="join">
-        <h2>…or join a friend's game</h2>
-        <div className="join-row">
-          <input
-            value={code}
-            onChange={(e) => setCode(e.target.value.toUpperCase())}
-            placeholder="G24-K7QXA"
-            autoCapitalize="characters"
-            autoCorrect="off"
-            spellCheck={false}
-            maxLength={20}
-          />
-          <button className="btn" disabled={!parsed || joinPool < 2} onClick={() => parsed && onStart(code)}>Join</button>
-        </div>
-        {code && !parsed && <p className="hint">Enter the code shown at the top of your friend's board, for example G24-K7QXA.</p>}
-        {parsed && (
-          <p className="hint">
-            {GAMES[parsed.game].name} · {Math.min(parsed.size, joinPool)} characters{parsed.filterCode ? ' · filtered' : ''}
-          </p>
-        )}
-        {parsed && !parsed.sameVersion && (
-          <p className="hint warn">
-            This code came from a version of the app with a different character list, so your boards won't match.
-            Both of you: tap <b>Check for updates</b> below, then start a new game.
-          </p>
-        )}
-      </section>
 
       <footer className="credits">
         <UpdateButton />

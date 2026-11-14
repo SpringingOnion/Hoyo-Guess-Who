@@ -33,8 +33,8 @@ export default function App() {
     <Home
       saved={saved}
       onResume={() => setPlaying(true)}
-      onStart={(code) => {
-        const g = newGame(code);
+      onStart={(game, filters) => {
+        const g = newGame(game, filters);
         if (g) { update(g); setPlaying(true); }
       }}
     />

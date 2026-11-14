@@ -87,15 +87,15 @@ h1, h2 { margin: 0; }
 .title { flex: 1; min-width: 0; display: flex; flex-direction: column; }
 .title strong { font-size: 0.95rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .title span { font-size: 0.8rem; color: var(--accent); }
-.code-chip { padding: 6px 10px; border-radius: 10px; background: var(--panel-2); font-size: 0.85rem; font-weight: 700; }
 
 .grid {
   flex: 1; display: grid; gap: 6px; padding: 8px; align-content: start;
   grid-template-columns: repeat(4, 1fr);
 }
-.grid.size-30 { grid-template-columns: repeat(5, 1fr); }
-@media (min-width: 600px) { .grid { grid-template-columns: repeat(6, 1fr); } .grid.size-30 { grid-template-columns: repeat(6, 1fr); } }
-@media (min-width: 900px) { .grid, .grid.size-30 { grid-template-columns: repeat(8, 1fr); } }
+.grid.dense { grid-template-columns: repeat(5, 1fr); gap: 5px; padding: 6px; }
+.grid.dense .card .name { font-size: 0.62rem; }
+@media (min-width: 600px) { .grid { grid-template-columns: repeat(6, 1fr); } .grid.dense { grid-template-columns: repeat(7, 1fr); } }
+@media (min-width: 900px) { .grid, .grid.dense { grid-template-columns: repeat(10, 1fr); } }
 
 .card {
   position: relative; display: flex; flex-direction: column; border-radius: 12px; overflow: hidden;
@@ -156,7 +156,6 @@ h1, h2 { margin: 0; }
 .pick-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
 .guess { display: flex; flex-direction: column; gap: 14px; text-align: center; }
 .guess h2 { padding: 0; }
-.big-code { font-size: 2.6rem; font-weight: 800; text-align: center; color: var(--accent); padding: 12px 0; }
 .menu { display: flex; flex-direction: column; gap: 10px; padding-top: 30px; }
 .win { display: flex; flex-direction: column; gap: 12px; text-align: center; }
 .win h2 { padding: 0; font-size: 1.8rem; }
