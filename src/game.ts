@@ -14,36 +14,24 @@ export interface GameInfo {
   id: GameId;
   name: string;
   letter: string;
-  /** [attribute key, label] pairs offered by the question helper */
-  questions: [string, string][];
-  rarity: (r: number) => string;
 }
 
 export const ROSTER = rosterJson as unknown as Record<GameId, Character[]>;
 
-const stars = (r: number) => `${r}★`;
-
 export const GAMES: Record<GameId, GameInfo> = {
   gi: {
-    id: 'gi', name: 'Genshin Impact', letter: 'G', rarity: stars,
-    questions: [['gender', 'Gender'], ['element', 'Element'], ['weapon', 'Weapon'], ['region', 'Region'], ['rarity', 'Rarity']],
+    id: 'gi', name: 'Genshin Impact', letter: 'G',
   },
   hsr: {
-    id: 'hsr', name: 'Honkai: Star Rail', letter: 'S', rarity: stars,
-    questions: [['gender', 'Gender'], ['element', 'Type'], ['path', 'Path'], ['rarity', 'Rarity']],
+    id: 'hsr', name: 'Honkai: Star Rail', letter: 'S',
   },
   zzz: {
-    id: 'zzz', name: 'Zenless Zone Zero', letter: 'Z', rarity: (r) => (r >= 5 ? 'S-Rank' : 'A-Rank'),
-    questions: [['gender', 'Gender'], ['element', 'Attribute'], ['specialty', 'Specialty'], ['rarity', 'Rank']],
+    id: 'zzz', name: 'Zenless Zone Zero', letter: 'Z',
   },
 };
 
 export const GAME_IDS: GameId[] = ['gi', 'hsr', 'zzz'];
 export const SIZES = [16, 20, 24, 30];
-
-export function attrOf(game: GameId, c: Character, key: string): string | undefined {
-  return key === 'rarity' ? GAMES[game].rarity(c.rarity) : c.attrs[key];
-}
 
 const byId = new Map<string, Character>();
 for (const g of GAME_IDS) for (const c of ROSTER[g]) byId.set(c.id, c);

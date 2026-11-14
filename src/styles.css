@@ -120,7 +120,7 @@ h1, h2 { margin: 0; }
 
 .bar.bottom {
   position: sticky; bottom: 0; padding: 8px 8px calc(env(safe-area-inset-bottom) + 8px);
-  border-top: 1px solid var(--line); display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  border-top: 1px solid var(--line); display: grid; grid-template-columns: 1.5fr 1fr 1fr;
 }
 .bar.bottom button { min-height: 48px; border-radius: 12px; background: var(--panel-2); font-weight: 600; font-size: 0.9rem; }
 .bar.bottom .accent { background: var(--accent); color: var(--accent-ink); }
@@ -149,16 +149,7 @@ h1, h2 { margin: 0; }
 .badge img { width: 150px; height: 150px; border-radius: 22px; object-fit: cover; border: 3px solid var(--accent); background: var(--tint); }
 .badge strong { font-size: 1.4rem; text-align: center; }
 
-.facts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0; }
-.facts div { background: var(--panel-2); border-radius: 12px; padding: 8px 12px; }
-.facts dt { font-size: 0.75rem; color: var(--muted); }
-.facts dd { margin: 2px 0 0; font-weight: 700; }
 
-.chips { display: flex; flex-wrap: wrap; gap: 8px; }
-.chips button { min-height: 40px; padding: 0 14px; border-radius: 999px; background: var(--panel-2); font-weight: 600; font-size: 0.9rem; }
-.chips button.on { background: var(--accent); color: var(--accent-ink); }
-.count { opacity: 0.6; font-size: 0.75rem; margin-left: 2px; }
-.question { font-size: 1.1rem; font-weight: 600; text-align: center; }
 .answer-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .answer-row .btn { min-height: 60px; font-size: 1.1rem; }
 

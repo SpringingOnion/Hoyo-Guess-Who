@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { GAMES, GameState, attrOf, charById, Character, pickSecret } from './game';
+import { GAMES, GameState, charById, Character, pickSecret } from './game';
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -10,7 +10,7 @@ interface Props {
   onNewGame: () => void;
 }
 
-type Sheet = null | 'secret' | 'ask' | 'guess' | 'code' | 'menu';
+type Sheet = null | 'secret' | 'guess' | 'code' | 'menu';
 
 export default function Board({ state, setState, onHome, onNewGame }: Props) {
   const [sheet, setSheet] = useState<Sheet>(null);
@@ -62,7 +62,6 @@ export default function Board({ state, setState, onHome, onNewGame }: Props) {
           <span className="mini-q">?</span>
           My character
         </button>
-        <button onClick={() => setSheet('ask')}>Ask</button>
         <button onClick={undo} disabled={!state.history.length}>Undo</button>
         <button className="accent" onClick={() => setSheet('guess')}>Guess</button>
       </nav>
@@ -70,10 +69,6 @@ export default function Board({ state, setState, onHome, onNewGame }: Props) {
       {sheet === 'secret' && (
         <SecretSheet c={secret} state={state} onClose={() => setSheet(null)}
           onReroll={() => { replay(true); setSheet(null); }} />
-      )}
-      {sheet === 'ask' && (
-        <AskSheet state={state} chars={chars} down={down} onClose={() => setSheet(null)}
-          onApply={(ids) => { commit([...state.down, ...ids]); setSheet(null); }} />
       )}
       {sheet === 'guess' && (
         <GuessSheet chars={up} onClose={() => setSheet(null)}
@@ -141,7 +136,6 @@ function CharacterBadge({ c }: { c: Character }) {
 
 function SecretSheet({ c, state, onClose, onReroll }: { c: Character; state: GameState; onClose: () => void; onReroll: () => void }) {
   const [shown, setShown] = useState(false);
-  const info = GAMES[state.game];
   return (
     <Modal onClose={onClose}>
       <h2>Your secret character</h2>
@@ -153,75 +147,9 @@ function SecretSheet({ c, state, onClose, onReroll }: { c: Character; state: Gam
       ) : (
         <>
           <CharacterBadge c={c} />
-          <p className="muted small">Use this to answer your opponent's questions:</p>
-          <dl className="facts">
-            {info.questions.map(([k, label]) => (
-              <div key={k}><dt>{label}</dt><dd>{attrOf(state.game, c, k) ?? '—'}</dd></div>
-            ))}
-          </dl>
           {!state.down.length && (
             <button className="btn wide subtle" onClick={onReroll}>Pick a different character</button>
           )}
-        </>
-      )}
-    </Modal>
-  );
-}
-
-function AskSheet({ state, chars, down, onClose, onApply }: {
-  state: GameState; chars: Character[]; down: Set<string>; onClose: () => void; onApply: (ids: string[]) => void;
-}) {
-  const info = GAMES[state.game];
-  const [key, setKey] = useState<string | null>(null);
-  const [value, setValue] = useState<string | null>(null);
-  const up = chars.filter((c) => !down.has(c.id));
-
-  const values = useMemo(() => {
-    if (!key) return [];
-    const counts = new Map<string, number>();
-    for (const c of up) {
-      const v = attrOf(state.game, c, key);
-      if (v) counts.set(v, (counts.get(v) ?? 0) + 1);
-    }
-    return [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0]));
-  }, [key, up, state.game]);
-
-  // Characters with an unknown value are never flipped automatically.
-  const flips = (answerYes: boolean) =>
-    up.filter((c) => {
-      const v = attrOf(state.game, c, key!);
-      return v !== undefined && (answerYes ? v !== value : v === value);
-    }).map((c) => c.id);
-
-  return (
-    <Modal onClose={onClose}>
-      <h2>Ask a question</h2>
-      <p className="muted small">Ask out loud, then tap the answer and the board flips itself.</p>
-      <div className="chips">
-        {info.questions.map(([k, label]) => (
-          <button key={k} className={key === k ? 'on' : ''} onClick={() => { setKey(k); setValue(null); }}>{label}</button>
-        ))}
-      </div>
-      {key && (
-        <div className="chips">
-          {values.map(([v, n]) => (
-            <button key={v} className={value === v ? 'on' : ''} onClick={() => setValue(v)}>
-              {v} <span className="count">{n}</span>
-            </button>
-          ))}
-        </div>
-      )}
-      {key && value && (
-        <>
-          <p className="question">
-            {key === 'gender' || key === 'rarity'
-              ? `“Is your character ${value}?”`
-              : `“Is your character’s ${info.questions.find(([k]) => k === key)![1].toLowerCase()} ${value}?”`}
-          </p>
-          <div className="answer-row">
-            <button className="btn yes" onClick={() => onApply(flips(true))}>Yes <small>flips {flips(true).length}</small></button>
-            <button className="btn no" onClick={() => onApply(flips(false))}>No <small>flips {flips(false).length}</small></button>
-          </div>
         </>
       )}
     </Modal>

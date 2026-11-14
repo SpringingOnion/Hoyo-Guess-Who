@@ -7,8 +7,8 @@ It's an installable web app (PWA): no Play Store, no APK, and it works offline o
 
 1. Player 1 picks a game and board size and taps **Start new game**. A code like `G24-K7QX` appears in the top bar.
 2. Player 2 enters that code under **Join a friend's game**, which gives both phones the same board.
-3. Each phone secretly picks its own character (**My character** shows it, plus its element, path and so on so you can answer questions).
-4. Take turns asking yes/no questions out loud. Tap cards to flip them down, or use **Ask** to pick a question and let the app flip the board for you.
+3. Each phone secretly picks its own character. Tap **My character** to see it.
+4. Take turns asking yes/no questions out loud and tap cards to flip them down. **Undo** reverses a mistake.
 5. **Guess** shows your guess full-screen for the other player to confirm.
 
 ## Install on Android
@@ -34,8 +34,7 @@ Both players need the same version for room codes to produce matching boards. In
 - `scripts/build-roster.mjs` pulls character data and official icons from
   [Yatta](https://gi.yatta.moe) (Genshin and Star Rail) and the [Enka.Network](https://github.com/EnkaNetwork/API-docs) store (ZZZ),
   converts the icons to 192px WebP in `public/portraits/` and writes `src/data/roster.json`.
-- `data/overrides.json` holds hand fixes merged on top of that data (for example, Star Rail genders, which no API provides).
-  If a character has no value for an attribute, the **Ask** helper never flips them for that question.
+- `data/overrides.json` holds hand fixes merged on top of that data (for example, renaming a character).
 
 ### Hosting
 
